@@ -5,8 +5,8 @@
         ' Created by Jeremy Bharwani on 6/7/21
         ' (questions- email jcb926@gmail.com)
         '
-        ' Iterates through chosen worksheets within document and reformats each sheet into its own workbook
-        ' that is then saved in the corresponding location.
+        ' Iterates through the selected worksheets and reformats each sheet into its own workbook with
+        ' all the formulas replaced that can then be saved in the corresponding location.
         ' References Used: "mscorlib"
         '
 
@@ -34,6 +34,7 @@
         End If
 
         'MAIN PROCESS ------------------------------------------------------------------------------------------
+        Application.ScreenUpdating = False 'avoids the visible opening and closing of the new workbooks
         For Each ws In ActiveWindow.SelectedSheets
             'Move sheet to an entirely new workbook
             Sheets(ws.Name).Select
@@ -52,6 +53,7 @@
 
             count = count + 1
         Next ws
+        Application.ScreenUpdating = True
 
         MsgBox Str(count) + " sheets successfully formatted and saved to " + strFolderName
     End Sub
