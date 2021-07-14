@@ -37,10 +37,10 @@
 
         'FOLDER SETUP ----------------------------------------------------------------------------------------------------------------------------------------------------
         'Checks if the necessary folder exists, if not it creates a new folder
-        strFolderName = "S:\acct\JLS\20" & year & "\" & year & "-CHS\Email\" & month & year
+        strFolderName = "{REMOVED FILEPATH}" & year & "\" & year & "-CHS\Email\" & month & year
         strFolderExists = Dir(strFolderName, vbDirectory)
         If strFolderExists = "" Then
-            MkDir("S:\acct\JLS\20" & year & "\" & year & "-CHS\Email\" & month & year)
+            MkDir("{REMOVED FILEPATH}" & year & "\" & year & "-CHS\Email\" & month & year)
         End If
 
         'COPY & SAVE -----------------------------------------------------------------------------------------------------------------------------------------------------
