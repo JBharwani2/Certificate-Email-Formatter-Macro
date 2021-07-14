@@ -19,7 +19,6 @@
     Dim year As String
     Dim strFolderName As String
     Dim strFolderExists As String
-    Dim message As String
     Dim count As Integer
     count = 0
 
