@@ -182,14 +182,14 @@
   -->
   <ItemGroup>
     <AppDesigner Include="My Project\" />
-    <Compile Include="CHSEmailFormat.vb">
+    <Compile Include="CertificateEmailFormatter.vb">
       <SubType>Code</SubType>
     </Compile>
-    <None Include="CHSEmailFormat.Designer.xml">
-      <DependentUpon>CHSEmailFormat.vb</DependentUpon>
+    <None Include="CertificateEmailFormatter.Designer.xml">
+      <DependentUpon>CertificateEmailFormatter.vb</DependentUpon>
     </None>
-    <Compile Include="CHSEmailFormat.Designer.vb">
-      <DependentUpon>CHSEmailFormat.Designer.xml</DependentUpon>
+    <Compile Include="CertificateEmailFormatter.Designer.vb">
+      <DependentUpon>CertificateEmailFormatter.Designer.xml</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -284,7 +284,7 @@
       <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
         <ProjectProperties HostName="Excel" HostPackage="{29A7B9D7-A7F1-4328-8EF0-6B2D1A56B2C1}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="Excel" Language="vb" TemplatesPath="" DebugInfoExeName="#Software\Microsoft\Office\16.0\Excel\InstallRoot\Path#excel.exe" DebugInfoCommandLine="/x" AddItemTemplatesGuid="{DCFE8D25-4715-4C33-9EAB-A34A9EBC9544}" />
         <Host Name="Excel" IconIndex="0">
-          <HostItem Name="ThisAddIn" Code="CHSEmailFormat.vb" CanonicalName="AddIn" CanActivate="false" IconIndex="1" Blueprint="CHSEmailFormat.Designer.xml" GeneratedCode="CHSEmailFormat.Designer.vb" />
+          <HostItem Name="ThisAddIn" Code="CertificateEmailFormatter.vb" CanonicalName="AddIn" CanActivate="false" IconIndex="1" Blueprint="CertificateEmailFormatter.Designer.xml" GeneratedCode="CertificateEmailFormatter.Designer.vb" />
         </Host>
       </FlavorProperties>
     </VisualStudio>
